@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+.f-row {
+    display: flex;
+    flex-direction: row;
+}
+.f-row-r {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.f-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

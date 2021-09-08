@@ -1,0 +1,6 @@
+:root {
+    --font: 'Raleway', sans-serif;
+    --blue-d: hsl(216, 100%, 49%);
+    --blue-l: hsl(216, 100%, 94%);
+    --gray: hsl(0, 0%, 95%);
+}
