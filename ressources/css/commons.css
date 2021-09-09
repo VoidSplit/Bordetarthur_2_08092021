@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: var(--font);
 }
+html {
+    scroll-behavior: smooth;
+}
 .f-row {
     display: flex;
     flex-direction: row;
@@ -17,4 +20,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.card {
+    color: #000;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.card img {
+    object-fit: cover;
+}
+#accomodations,
+#activities {
+    scroll-margin-top: 50px;
 }
