@@ -62,22 +62,26 @@
         display: none;
     }
     .location form label input[type="submit"] {
-        position: absolute;
-        right: -33px;
         display: block;
-        font-family: "Font Awesome 5 Free";
         aspect-ratio: 1;
-        height: 100%;
+        height: 50px;
+        width: 50px;
         width: initial;
         border-radius: 12px;
+        background-color: var(--blue-d);
         -webkit-border-radius: 12px;
         -moz-border-radius: 12px;
         -ms-border-radius: 12px;
         -o-border-radius: 12px;
     }
     .location form label {
-        position: relative;
-        background-color: red;
+        position: absolute;
+        right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
     }
     .location form label i {
         position: absolute;
