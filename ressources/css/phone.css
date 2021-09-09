@@ -61,7 +61,7 @@
     .location form input[type="submit"]:nth-child(2) {
         display: none;
     }
-    .location form input[type="submit"]:nth-child(3) {
+    .location form label input[type="submit"] {
         position: absolute;
         right: 0;
         display: block;
@@ -74,6 +74,17 @@
         -moz-border-radius: 12px;
         -ms-border-radius: 12px;
         -o-border-radius: 12px;
+    }
+    .location form label {
+        position: relative;
+        background-color: red;
+    }
+    .location form label i {
+        position: absolute;
+        z-index: 2;
+        left: -33px;
+        top: 18px;
+        color: #fff;
     }
     .filters {
         flex-wrap: wrap;
