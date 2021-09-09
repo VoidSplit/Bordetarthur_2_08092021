@@ -1,3 +1,14 @@
+/*
+    If you edit/see this code with VSCode, use "Better Comments" from Aaron Bond, to see correctly the colors
+    of the comments.
+
+    ! is red
+    ? is blue
+    * is green
+    todo is orange
+
+    Developed by Arthur Bordet for the OpenClassroom's front-end training.
+*/
 /*! Stylising the phone version !*/
 @media screen and (max-width: 810px) {
     main {
