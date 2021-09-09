@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="ressources/css/commons.css">
         <link rel="stylesheet" href="ressources/css/variables.css">
         <link rel="stylesheet" href="ressources/css/fonts.css">
-        <link rel="stylesheet" href="ressources/css/style.css">
+        <link rel="stylesheet" href="ressources/css/desktop.css">
+        <link rel="stylesheet" href="ressources/css/phone.css">
         <link rel="shortcut icon" href="ressources/images/logo/Reservia.svg" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
         <title>Reservia</title>
@@ -15,15 +16,13 @@
         <main>
             <nav class="f-row-r">
                 <img src="ressources/images/logo/Reservia.svg" alt="Logo du site">
+                <a href="#" class="active connexion">S'inscrire</a>
                 <ul class="f-row">
                     <li>
                         <a class="selected" href="#accomodations">Hébergements</a>
                     </li>
                     <li>
                         <a href="#activities">Activités</a>
-                    </li>
-                    <li>
-                        <a href="#" class="active">S'inscrire</a>
                     </li>
                 </ul>
             </nav>
@@ -39,6 +38,7 @@
                     <form action="#">
                         <input type="text" name="Location" id="LocationSelect" value="Marseille, France">
                         <input type="submit" value="Rechercher">
+                        <input type="submit" value="&#xf002;">
                     </form>
                 </div>
                 <div class="filters f-row">
