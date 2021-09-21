@@ -6,6 +6,7 @@ ___
 Reservia is a website that allows you to plan your vacation, you can find accommodation and activities in the city of your choice according to filters (themes, budget, atmosphere, etc.).
 ___
 My job is to turn a mockup into a website, not to make a functional website, so this website is only the front-end part of the project, and probably won't go further than that.
+And I only use **HTML** and **CSS** with the font awesome library.
 ## What technologies have I used?
 I was forced not to use a framework so it's just html and css without a framework.
 
