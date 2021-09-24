@@ -10,7 +10,7 @@
     Developed by Arthur Bordet for the OpenClassroom's front-end training.
 */
 /*! Stylising the phone version !*/
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 939px) {
     main {
         max-width: 100%;
         overflow: hidden;
@@ -67,13 +67,8 @@
         display: block;
         height: 50px;
         width: 50px;
-        width: initial;
         border-radius: 12px;
         background-color: var(--blue-d);
-        -webkit-border-radius: 12px;
-        -moz-border-radius: 12px;
-        -ms-border-radius: 12px;
-        -o-border-radius: 12px;
     }
     .location form label {
         position: absolute;
@@ -109,6 +104,10 @@
         width: 100%;
         margin-left: 0;
         padding: 50px 25px;
+    }
+    .popular-housing .wrapper {
+        display: flex;
+        flex-direction: column;
     }
     .result-housing {
         background-color: #fff;

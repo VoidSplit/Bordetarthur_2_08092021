@@ -37,10 +37,6 @@ nav ul li a {
     color: #000;
     padding: 50px;
     transition: .3s color, .3s border;
-    -webkit-transition: .3s color, .3s border;
-    -moz-transition: .3s color, .3s border;
-    -ms-transition: .3s color, .3s border;
-    -o-transition: .3s color, .3s border;
 }
 nav ul li a:hover,
 nav ul li a.selected {
@@ -53,22 +49,23 @@ nav a.active {
     color: var(--blue-d);
 }
 /** Filters and research bar **/
-section.filters-section h1 {
+section.filters-section p.title {
     font-weight: bold;
     padding-bottom: 5px;
 }
 section.filters-section h4 {
     font-weight: 500;
 }
+section.filters-section h2 {
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
 .location {
     width: 380px;
     overflow: hidden;
     border-radius: 13px;
     margin: 20px 0 30px 0;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
 }
 .location .icon {
     background-color: var(--gray);
@@ -123,10 +120,6 @@ section.filters-section h4 {
     margin-right: 20px;
     border-radius: 40px;
     transition: .1s background ease-in-out;
-    -webkit-transition: .1s background ease-in-out;
-    -moz-transition: .1s background ease-in-out;
-    -ms-transition: .1s background ease-in-out;
-    -o-transition: .1s background ease-in-out;
 }
 .filter-box:hover {
     background-color: var(--blue-l);
@@ -146,14 +139,6 @@ section.filters-section h4 {
     width: 50px;
     border-radius: 50px;
     transition: .1s background ease-in-out, .1s color ease-in-out;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    -webkit-transition: .1s background ease-in-out, .1s color ease-in-out;
-    -moz-transition: .1s background ease-in-out, .1s color ease-in-out;
-    -ms-transition: .1s background ease-in-out, .1s color ease-in-out;
-    -o-transition: .1s background ease-in-out, .1s color ease-in-out;
 }
 .filter-box p {
     border-radius: 40px;
@@ -165,14 +150,6 @@ section.filters-section h4 {
     display: flex;
     align-items: center;
     transition: .1s border-color ease-in-out;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    -webkit-transition: .1s border-color ease-in-out;
-    -moz-transition: .1s border-color ease-in-out;
-    -ms-transition: .1s border-color ease-in-out;
-    -o-transition: .1s border-color ease-in-out;
 }
 .informations-filters i {
     height: 25px;
@@ -183,10 +160,6 @@ section.filters-section h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
 }
 .informations-filters {
     align-items: center;
@@ -207,10 +180,6 @@ section.filters-section h4 {
     min-height: 80vh;
     overflow: hidden;
     padding: 60px 40px 0 40px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 .card-wrapper .top {
     display: flex;
@@ -251,10 +220,14 @@ section.filters-section h4 {
     width: 100%;
     height: 115px;
 }
-.card-wrapper .wrapper .card h3,
+.card-wrapper .wrapper .card h1,
 .card-wrapper .wrapper .card p {
     margin-left: 10px;
     padding: 3px 0;
+    font-size: 1.1em;
+}
+.card-wrapper .wrapper .card p {
+    font-size: .9em;
 }
 /*? System of stars (works with html's data-attributes) ?*/
 .stars-count {
@@ -381,14 +354,39 @@ footer section ul li a {
     #accomodations {
         flex-direction: column-reverse;
     }
-    .popular-housing,
     .result-housing {
         width: 100%;
         margin-left: 0;
         padding: 50px 25px;
     }
     .popular-housing {
+        width: 100%;
+        margin-left: 0;
+        padding: 50px 25px;
+        height: auto;
+    }
+    .popular-housing .wrapper {
+        margin-top: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+        gap: 15px;
+    }
+    .card-wrapper {
         min-height: auto;
+    }
+    .popular-housing .wrapper .card.popular {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+    .popular-housing .wrapper .card.popular img {
+        width: 50%;
+        position: relative;
+    }
+    .popular-housing .wrapper .card.popular .infos {
+        width: 50%;
+        padding: 5px;
     }
     .result-housing {
         background-color: #fff;
@@ -406,5 +404,13 @@ footer section ul li a {
     }
     .seemore-box {
         height: 80px;
+    }
+}
+
+/*! Stylising the accomodations, for a screen size of 1630px  !*/
+@media screen and (max-width: 1110px) {
+    .card-wrapper .wrapper .card h1,
+    .card-wrapper .wrapper .card p {
+        font-size: .9em;
     }
 }
