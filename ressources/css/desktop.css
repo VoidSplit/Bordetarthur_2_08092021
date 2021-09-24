@@ -221,6 +221,7 @@ section.filters-section h2 {
     height: 115px;
 }
 .card-wrapper .wrapper .card h1,
+.card-wrapper .wrapper .card h3,
 .card-wrapper .wrapper .card p {
     margin-left: 10px;
     padding: 3px 0;

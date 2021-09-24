@@ -123,6 +123,10 @@
     .result-housing .wrapper .card img {
         width: 100%;
     }
+    .card-wrapper .wrapper .card h1,
+    .card-wrapper .wrapper .card p {
+        font-size: 1em;
+    }
     .seemore-box {
         height: 80px;
     }
