@@ -52,6 +52,7 @@ nav a.active {
 section.filters-section p.title {
     font-weight: bold;
     padding-bottom: 5px;
+    margin-right: 15px;
 }
 section.filters-section h4 {
     font-weight: 500;
@@ -177,7 +178,6 @@ section.filters-section h2 {
     margin-top: 25px;
     background-color: var(--gray);
     border-radius: 20px;
-    min-height: 80vh;
     overflow: hidden;
     padding: 60px 40px 0 40px;
 }
@@ -201,11 +201,16 @@ section.filters-section h2 {
 .popular-housing .top a {
     color: #000;
 }
-.card-wrapper .wrapper {
-    justify-content: center;
+.result-housing.card-wrapper .inner {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+.result-housing.card-wrapper .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 850px;
+    height: 450px;
 }
 /** Stylising cards **/
 .card-wrapper .wrapper .card {
@@ -350,7 +355,7 @@ footer section ul li a {
     color: #000;
     line-height: 30px;
 }
-/*! Stylising the accomodations, for a screen size of 1630px  !*/
+/*! Stylising the accomodations, for a screen size of 1710px  !*/
 @media screen and (max-width: 1710px) {
     #accomodations {
         flex-direction: column-reverse;
@@ -408,7 +413,7 @@ footer section ul li a {
     }
 }
 
-/*! Stylising the accomodations, for a screen size of 1630px  !*/
+/*! Stylising the accomodations, for a screen size of 1110px  !*/
 @media screen and (max-width: 1110px) {
     .card-wrapper .wrapper .card h1,
     .card-wrapper .wrapper .card p {

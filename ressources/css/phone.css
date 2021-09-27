@@ -115,6 +115,10 @@
     }
     .result-housing .wrapper {
         margin-top: 25px;
+        display: flex !important;
+        flex-direction: column;
+        height: unset !important;
+        width: 100%;
     }
     .result-housing .wrapper .card {
         width: 100%;
