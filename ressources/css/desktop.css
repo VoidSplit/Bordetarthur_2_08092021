@@ -209,12 +209,10 @@ section.filters-section h2 {
 .result-housing.card-wrapper .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 850px;
-    height: 450px;
+    width: 100%;
 }
 /** Stylising cards **/
 .card-wrapper .wrapper .card {
-    width: 250px;
     height: 200px;
     padding: 5px;
     margin: 25px 12.5px 0 12.5px;

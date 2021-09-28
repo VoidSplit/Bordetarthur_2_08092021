@@ -121,7 +121,7 @@
         width: 100%;
     }
     .result-housing .wrapper .card {
-        width: 100%;
+        width: initial;
         box-shadow: 0 0 15px var(--gray);
     }
     .result-housing .wrapper .card img {
