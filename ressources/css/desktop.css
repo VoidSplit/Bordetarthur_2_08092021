@@ -10,7 +10,8 @@
     Developed by Arthur Bordet for the OpenClassroom's front-end training.
 */
 /*! Stylising the main page !*/
-main {
+main,
+header {
     padding: 0 50px;
 }
 /** Navigation bar **/
@@ -191,7 +192,7 @@ section.filters-section h2 {
 }
 /** Panel of researched accomodations **/
 .popular-housing {
-    width: calc(30vw - 50px);
+    width: calc(30% - 50px);
     margin-left: 50px;
     position: relative;
 }
@@ -212,8 +213,10 @@ section.filters-section h2 {
     width: 100%;
 }
 /** Stylising cards **/
+.result-housing .wrapper .card {
+    min-height: 200px;
+}
 .card-wrapper .wrapper .card {
-    height: 200px;
     padding: 5px;
     margin: 25px 12.5px 0 12.5px;
 }
@@ -236,8 +239,12 @@ section.filters-section h2 {
 /*? System of stars (works with html's data-attributes) ?*/
 .stars-count {
     color: var(--gray);
-    margin: 0 10px 10px;
     font-size: .9em;
+    width: 103.7px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
 }
 .stars-count[data-stars="1"] > i:nth-child(-n+1),
 .stars-count[data-stars="2"] > i:nth-child(-n+2),
@@ -249,19 +256,32 @@ section.filters-section h2 {
 .card-wrapper .wrapper .card.popular {
     display: flex;
     flex-direction: row;
-    width: 350px;
     height: 150px;
 }
 .card-wrapper .wrapper .card.popular img {
     height: 100%;
-    width: 140px;
+    max-width: 40%;
     border-top-right-radius: 0;
     border-bottom-left-radius: 21px;
 }
 .card-wrapper .wrapper .card.popular .infos {
     position: relative;
     height: 100%;
-    padding: 0 22px;
+    padding: 0 15px;
+}
+.card-wrapper .wrapper .card.popular .infos h1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-wrapper .wrapper .card.popular .infos p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .card-wrapper .wrapper .card.popular .stars-count {
     position: absolute;
@@ -353,8 +373,8 @@ footer section ul li a {
     color: #000;
     line-height: 30px;
 }
-/*! Stylising the accomodations, for a screen size of 1710px  !*/
-@media screen and (max-width: 1710px) {
+/*! Stylising the accomodations, for a screen size of 1080px  !*/
+@media screen and (max-width: 1080px) {
     #accomodations {
         flex-direction: column-reverse;
     }
