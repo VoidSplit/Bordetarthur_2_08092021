@@ -285,7 +285,7 @@ section.filters-section h2 {
 }
 .card-wrapper .wrapper .card.popular .stars-count {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 /** More housing button **/
 .seemore-box {
